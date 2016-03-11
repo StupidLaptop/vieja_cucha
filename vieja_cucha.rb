@@ -18,8 +18,8 @@ stream_client ||= Twitter::Streaming::Client.new do |config|
 	config.access_token_secret = ENV['VC_ACCESS_TOKEN_SECRET']
 end	
 
-def tweet_it(tweet)
-		@rest_client.update(tweet)
+def tweet_it(tweet, in_reply_to)
+		@rest_client.update(tweet, in_reply_to_status: in_reply_to)
 end
 
 def puteada
@@ -43,7 +43,7 @@ stream_client.user do |object|
 			reply_to = object.user.screen_name
 			reply_text = puteada
 			reply_message = "@#{reply_to} #{reply_text}"
-			tweet_it(reply_message)
+			tweet_it(reply_message, object.id)
 		end 
 	end
 end

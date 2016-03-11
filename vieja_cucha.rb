@@ -43,7 +43,7 @@ stream_client.user do |object|
 			reply_to = object.user.screen_name
 			reply_text = puteada
 			reply_message = "@#{reply_to} #{reply_text}"
-			puts reply_message
+			#puts reply_message
 			#puts reply_message.length 
 			tweet_it(reply_message) 
 		end 

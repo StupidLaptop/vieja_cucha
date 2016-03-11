@@ -23,14 +23,15 @@ def tweet_it(tweet, in_reply_to)
 end
 
 def puteada
-	intro = [ "Páseme a su mamá culicagado ", "Coja oficio chino ", "No me joda más pelaíto ",
-			"Quien le dio mi twitter chino ", "Ábrase ", "Déjeme en paz culicagado ", "Coma mierda chino "]
+	intro = [ "Vieja cucha será la perra que lo parió. Chino ", "Páseme a su mamá culicagado ", 
+			  "Coja oficio chino ", "No me joda más pelaíto ", "Quien le dio mi twitter chino ", 
+			  "Ábrase ", "Déjeme en paz culicagado ", "Coma mierda chino "]
 	insultos = ["comemierda","pirobo", "gonorrea", "sieteleches", "nacidoporelano", "hijueputa", 
 				"doblehijueputa", "mengamprea", "gorsobia", "paridoabrincos", "guaricha",
 				"setentahijueputa", "triplemalparido", "remalparido", "chancroneaequina", 
 				"hijodelagranputa", "hijodeunahienacalva", "espantalavirgen", "pichurria",
-				"sanguijuelaexcremental", "garnopapolla", "pentablasborria", "chupamelculo", "sarnoso",
-				 "rasuramelaxila", "desadaptado", "recontragonorrea", "carepeo", "chupaverga"]
+				"sanguijuelaexcremental", "garnopapolla", "pentablasborria", "chupamelculo", 
+				"sarnoso", "rasuramelaxila", "desadaptado", "recontragonorrea", "carepeo", "chupaverga"]
 	outro = [". Le voy a decir a sus papás.", ". Siga jodiendo y verá", ". Yo se quién es ud.",
 			". Espere y verá.", ". Suerte gonorrea picha.", ". Adiós garrapata inmunda.", ". Ojalá se muera, perro."]
 	result = intro.sample.to_s << insultos.sample(3).join(", ") << outro.sample.to_s

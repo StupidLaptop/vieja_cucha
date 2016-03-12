@@ -45,6 +45,7 @@ stream_client.user do |object|
 			reply_text = puteada
 			reply_message = "@#{reply_to} #{reply_text}"
 			tweet_it(reply_message, object.id)
+			#puts reply_message
 		end 
 	end
 end

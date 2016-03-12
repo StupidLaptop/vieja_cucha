@@ -19,7 +19,7 @@ stream_client ||= Twitter::Streaming::Client.new do |config|
 end	
 
 def tweet_it(tweet, in_reply_to)
-		@rest_client.update(tweet, in_reply_to_status: in_reply_to)
+		@rest_client.update(tweet, in_reply_to_status_id: in_reply_to)
 end
 
 def puteada
